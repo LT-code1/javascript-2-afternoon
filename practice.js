@@ -13,7 +13,11 @@
   Give it a key of name with the value being your name, and another key of age with the value being your age.
   Then alert your name using dot notation.
 */
-
+let me = {
+  name:"Brian",
+  age:25
+};
+//alert(me.name);
 //Code here
 
 ////////// PROBLEM 2 //////////
@@ -22,21 +26,30 @@
   Make a 'favoriteThings' object that contains the following keys: band, food, person, book, movie, holiday.
   Have the values to those keys be strings that are equal to your favorite thing in that category.
 */
-
+let favoriteThings = {
+    band:"bandname",
+    food:"foodname",
+    person:"personname",
+    book:"bookname",
+    movie:"moviename",
+    holiday:"holidayname"
+};
 //Code here
 
 /*
   After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car
   and then another key named 'brand' with the value being your favorite brand.
 */
-
+favoriteThings.car="Sliverado";
+favoriteThings.brand="Chevy";
 //Code here
 
 /*
   Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
   and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
 */
-
+favoriteThings.food="Chicken Nuggets";
+favoriteThings.book="Harry Potter";
 //Code here
 
 ////////// PROBLEM 3 //////////
@@ -54,6 +67,10 @@
 /*
   After you do the above, alert your entire backPack object.
 */
+let backPack = {};
+let item = "firstPocket";
+//backPack.item="chapstick";  //can't do this//
+backPack[item]="chapstick";
 
 //Code here
 
@@ -62,7 +79,7 @@ You probably noticed that it just alerted [object Object].
 Alerting to see the data in your Object doesn't work so well.
 Instead, console.log your whole backPack object and then check out the console.
 */
-
+console.log(backPack);
 //Code here
 
 ////////// PROBLEM 4 //////////
@@ -85,7 +102,8 @@ var user2 = {
 */
 
 //Code Here
-
+user2.name="Bryan G. Smith";
+user2.email="bryan.smith@devmounta.in";
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
 ////////// MOVE ONTO NEXT SECTION BEFORE WORKING ON THESE ////////////////
 
